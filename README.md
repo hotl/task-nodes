@@ -7,16 +7,16 @@
 
 <ul>
 Current Issues with provisioning service:<br>
-    &nbsp;&nbsp;=> No rollback enabled. Created resources are no longer manageable in the event of a failure</li>
+    &nbsp;&nbsp;=> No rollback enabled. Created resources are no longer manageable in the event of a failure<br>
         <ul>
-        &nbsp;&nbsp;&nbsp;&nbsp;=> Resources are not connected to dependencies</li>
-        &nbsp;&nbsp;&nbsp;&nbsp;=> Resources cannot be destroyed by provisioning service</li>
-        &nbsp;&nbsp;&nbsp;&nbsp;=> Resources exist on multiple platforms. This makes it troublesome to destroy a stack</li>
+        &nbsp;&nbsp;&nbsp;&nbsp;=> Resources are not connected to dependencies<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;=> Resources cannot be destroyed by provisioning service<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;=> Resources exist on multiple platforms. This makes it troublesome to destroy a stack<br>
         </ul>
-    &nbsp;&nbsp;=> Dependency on async module</li>
+    &nbsp;&nbsp;=> Dependency on async module<br>
         <ul>
-        &nbsp;&nbsp;&nbsp;&nbsp;=> Code style is restricted to fit the needs of the async module</li>
-        &nbsp;&nbsp;&nbsp;&nbsp;=> Code style often falls victim to 'Callback Hell' by newer members of the team</li>
+        &nbsp;&nbsp;&nbsp;&nbsp;=> Code style is restricted to fit the needs of the async module<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;=> Code style often falls victim to 'Callback Hell' by newer members of the team<br>
         </ul>
 </ul>
 Requirements:
