@@ -1,14 +1,17 @@
-This repository contains custom Linked List + Node classes
-This is essentially a POC to migrate our provisioning services away from dependency on the async module
+<h1>Task Nodes</h1>
 
-Current Issues with provisioning service:
-    => No rollback enabled. Created resources are no longer manageable in the event of a failure
-        => Resources are not connected to dependencies
-        => Resources cannot be destroyed by provisioning service
-        => Resources exist on multiple platforms. This makes it troublesome to destroy a stack
-    => Dependency on async module
-        => Code style is restricted to fit the needs of the async module
-        => Code style often falls victim to 'Callback Hell' by newer members of the team
+<blockquote>
+<p>This repository contains custom Linked List + Node classes</p>
+<p>This is essentially a POC to migrate our provisioning services away from dependency on the async module</p>
+</blockquote>
+Current Issues with provisioning service:\s\s
+    => No rollback enabled. Created resources are no longer manageable in the event of a failure\s\s
+        => Resources are not connected to dependencies\s\s
+        => Resources cannot be destroyed by provisioning service\s\s
+        => Resources exist on multiple platforms. This makes it troublesome to destroy a stack\s\s
+    => Dependency on async module\s\s
+        => Code style is restricted to fit the needs of the async module\s\s
+        => Code style often falls victim to 'Callback Hell' by newer members of the team\s\s
 
 Requirements:
     => Must enfore synchronous behavior for tasks
@@ -61,5 +64,5 @@ Overview:
         function getNodeByIndex
         execute
     }
-    
+
 ***************************
