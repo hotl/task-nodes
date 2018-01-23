@@ -4,15 +4,21 @@
 <p>This repository contains custom Linked List + Node classes</p>
 <p>This is essentially a POC to migrate our provisioning services away from dependency on the async module</p>
 </blockquote>
-Current Issues with provisioning service:<br>
-    => No rollback enabled. Created resources are no longer manageable in the event of a failure<br>
-        => Resources are not connected to dependencies<br>
-        => Resources cannot be destroyed by provisioning service<br>
-        => Resources exist on multiple platforms. This makes it troublesome to destroy a stack<br>
-    => Dependency on async module<br>
-        => Code style is restricted to fit the needs of the async module<br>
-        => Code style often falls victim to 'Callback Hell' by newer members of the team<br>
 
+<ul>
+Current Issues with provisioning service:<br>
+    <li>=> No rollback enabled. Created resources are no longer manageable in the event of a failure</li>
+        <ul>
+        <li>=> Resources are not connected to dependencies</li>
+        <li>=> Resources cannot be destroyed by provisioning service</li>
+        <li>=> Resources exist on multiple platforms. This makes it troublesome to destroy a stack</li>
+        </ul>
+    <li>=> Dependency on async module</li>
+        <ul>
+        <li>=> Code style is restricted to fit the needs of the async module</li>
+        <li>=> Code style often falls victim to 'Callback Hell' by newer members of the team</li>
+        </ul>
+</ul>
 Requirements:
     => Must enfore synchronous behavior for tasks
     => Must be capable of rolling back upon encountering errors
