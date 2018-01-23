@@ -25,10 +25,12 @@ Requirements:<br>
     &nbsp;&nbsp;=> Must enforce canonical order<br>
     &nbsp;&nbsp;=> Must allow Nodes to execute custom defined logic<br>
     &nbsp;&nbsp;=> Must be overridable<br>
-        &nbsp;&nbsp;&nbsp;&nbsp;=> Developing LinkedList class as a generic allows for further extendability<br>
-    &nbsp;&nbsp;&nbsp;&nbsp;=> Nodes should be lexical containers for logic<br>
+        <ul>&nbsp;&nbsp;&nbsp;&nbsp;=> Developing LinkedList class as a generic allows for further extendability<br></ul>
+    &nbsp;&nbsp;=> Nodes should be lexical containers for logic<br>
+        <ul>
         &nbsp;&nbsp;&nbsp;&nbsp;=> Node instances should represent wrappers around functions<br>
         &nbsp;&nbsp;&nbsp;&nbsp;=> Function-to-Node instance must have 1:1 relationship<br>
+        </ul>
 </ul>
 Overview:
 
