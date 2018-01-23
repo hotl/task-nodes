@@ -18,7 +18,7 @@ Current Issues with provisioning service:<br>
         </ul>
 </ul>
 
-<li>
+<ul>
 Requirements:<br>
     &nbsp;&nbsp;=> Must enfore synchronous behavior for tasks<br>
     &nbsp;&nbsp;=> Must be capable of rolling back upon encountering errors<br>
@@ -29,7 +29,7 @@ Requirements:<br>
     &nbsp;&nbsp;&nbsp;&nbsp;=> Nodes should be lexical containers for logic<br>
         &nbsp;&nbsp;&nbsp;&nbsp;=> Node instances should represent wrappers around functions<br>
         &nbsp;&nbsp;&nbsp;&nbsp;=> Function-to-Node instance must have 1:1 relationship<br>
-
+</ul>
 Overview:
 
 ***************************
