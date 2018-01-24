@@ -1,26 +1,37 @@
-This repository contains custom Linked List + Node classes
-This is essentially a POC to migrate our provisioning services away from dependency on the async module
+<h1>Task Nodes</h1>
 
-Current Issues with provisioning service:
-    => No rollback enabled. Created resources are no longer manageable in the event of a failure
-        => Resources are not connected to dependencies
-        => Resources cannot be destroyed by provisioning service
-        => Resources exist on multiple platforms. This makes it troublesome to destroy a stack
-    => Dependency on async module
-        => Code style is restricted to fit the needs of the async module
-        => Code style often falls victim to 'Callback Hell' by newer members of the team
+<p>This repository contains custom Linked List + Node classes</p>
+<p>This is essentially a POC to migrate our provisioning services away from dependency on the async module</p>
 
-Requirements:
-    => Must enfore synchronous behavior for tasks
-    => Must be capable of rolling back upon encountering errors
-    => Must enforce canonical order
-    => Must allow Nodes to execute custom defined logic
-    => Must be overridable
-        => Developing LinkedList class as a generic allows for further extendability
-    => Nodes should be lexical containers for logic
-        => Node instances should represent wrappers around functions
-        => Function-to-Node instance must have 1:1 relationship
+<ul>
+Current Issues with provisioning service:<br>
+    &nbsp;&nbsp;=> No rollback enabled. Created resources are no longer manageable in the event of a failure<br>
+        <ul>
+        &nbsp;&nbsp;&nbsp;&nbsp;=> Resources are not connected to dependencies<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;=> Resources cannot be destroyed by provisioning service<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;=> Resources exist on multiple platforms. This makes it troublesome to destroy a stack<br>
+        </ul>
+    &nbsp;&nbsp;=> Dependency on async module<br>
+        <ul>
+        &nbsp;&nbsp;&nbsp;&nbsp;=> Code style is restricted to fit the needs of the async module<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;=> Code style often falls victim to 'Callback Hell' by newer members of the team<br>
+        </ul>
+</ul>
 
+<ul>
+Requirements:<br>
+    &nbsp;&nbsp;=> Must enfore synchronous behavior for tasks<br>
+    &nbsp;&nbsp;=> Must be capable of rolling back upon encountering errors<br>
+    &nbsp;&nbsp;=> Must enforce canonical order<br>
+    &nbsp;&nbsp;=> Must allow Nodes to execute custom defined logic<br>
+    &nbsp;&nbsp;=> Must be overridable<br>
+        <ul>&nbsp;&nbsp;&nbsp;&nbsp;=> Developing LinkedList class as a generic allows for further extendability<br></ul>
+    &nbsp;&nbsp;=> Nodes should be lexical containers for logic<br>
+        <ul>
+        &nbsp;&nbsp;&nbsp;&nbsp;=> Node instances should represent wrappers around functions<br>
+        &nbsp;&nbsp;&nbsp;&nbsp;=> Function-to-Node instance must have 1:1 relationship<br>
+        </ul>
+</ul>
 Overview:
 
 ***************************
@@ -61,5 +72,5 @@ Overview:
         function getNodeByIndex
         execute
     }
-    
+
 ***************************
